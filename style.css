@@ -1,0 +1,24 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.custom-link p {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .custom-link:hover p {
+    color: #3b82f6; /* This is the color for text-blue-500 in Tailwind */
+  }
+
+  h2 {
+    position: relative;
+  }
+  
+  h2::before {
+    content: "";
+    display: block;
+    height: 80px; /* Adjust this to match your header's height */
+    margin-top: -80px; /* Same as height */
+    visibility: hidden;
+    pointer-events: none;
+  }

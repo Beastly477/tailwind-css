@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Home</title>
+  </head>
+  <body class="bg-gray-200">
+    <header class="bg-blue-200 shadow fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center p1-2">
+                <div>
+                  <a class="text-gray-800 text-xl font-bold" href="#">Dustin's Portfolio</a>
+                </div>
+            <div class="flex items-center">
+              <div class="hidden md:flex items-center space-x-5">
+                <a class="text-gray-800 hover:text-gray-600 text-sm" href="#">Home</a>
+                <a class="text-gray-800 hover:text-gray-600 text-sm" href="#about">About</a>
+                <a class="text-gray-800 hover:text-gray-600 text-sm" href="#contact">Contact</a>
+              </div>
+              <!-- Hamburger Menu - Displayed Only on Mobile -->
+              <div class="md:hidden">
+                <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
+                  <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                    <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="hero bg-blue-500 text-white text-center py-16">
+        <div class="container mx-auto mt-10">
+          <h1 class="text-4xl font-bold mb-4">Hello, I'm Dustin Scott</h1>
+          <p class="text-xl mb-8">I'm a Web Developer expanding my knowledge in full stack front-end, database, and back-end development.</p>
+          <a href="#contact" class="bg-white text-blue-500 px-6 py-2 rounded font-bold transition-colors duration-200 ease-in-out hover:bg-blue-700 hover:text-white">Contact Me</a>
+        </div>
+      </section>
+    <section class="p-16">
+        <h2 id="about" class="text-3xl font-bold mb-4">My Skills</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-white p-4 shadow">
+            <h3 class="font-bold mb-2">HTML</h3>
+            <p>Experienced with HTML5 and semantic markup.</p>
+          </div>
+          <!-- Repeat for other skills -->
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">CSS</h3>
+                <p>Experienced with CSS3 and modern layout techniques.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">JavaScript</h3>
+                <p>Semi-experienced with ES6 and JavaScript frameworks.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">Git</h3>
+                <p>Experience with Git and version control.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">PHP</h3>
+                <p>Learning to use and build PHP applications.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">Laravel</h3>
+                <p>Learning to use and build Laravel frameworks.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">Tailwind CSS</h3>
+                <p>Experimenting with Tailwind CSS and utility-first design.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">AlpineJS</h3>
+                <p>Learning to use AlpineJS for interactivity and JavaScript.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">Statamic CMS for Laravel</h3>
+                <p>Learning to use Statamic CMS for Laravel and PHP.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">VSCode</h3>
+                <p>Experience with Visual Studio Code and extensions.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">GitHub Copilot/Chat</h3>
+                <p>Experience with GitHub Copilot and Chat.</p>
+            </div>
+            <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">Linux (Ubuntu/Mint)</h3>
+                <p>Experience with Linux and terminal commands.</p>
+            </div>
+        </div>
+      </section>
+        <section class="p-16 bg-gray-100">
+            <h2 class="text-3xl font-bold mb-4">My Work</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <a href="https://codepen.io/Dustin-Scott" target="_blank" class="custom-link transition-colors duration-200 ease-in-out">
+                    <div class="bg-white hover:bg-gray-200 p-4 shadow cursor-pointer transition-colors duration-200 ease-in-out">
+                      <h3 class="font-bold mb-2">CodePen.io</h3>
+                      <p class="text-black">My first few projects from freeCodeCamp</p>
+                    </div>
+                  </a>
+            <!-- Repeat for other projects -->
+              <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">Project 2</h3>
+                <p>Project description goes here.</p>
+              </div>
+              <div class="bg-white p-4 shadow">
+                <h3 class="font-bold mb-2">Project 3</h3>
+                <p>Project description goes here.</p>
+              </div>
+            </div>
+        </section>
+        <section id="contact" class="p-16 bg-blue-500 text-white">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <p class="mb-8">Fill out the form below to get in touch with me.</p>
+            <form action="https://formspree.io/f/xnqoqzqz" method="POST">
+              <div class="mb-4">
+                <label class="block mb-2" for="name">Name</label>
+                <input class="w-full p-3 rounded bg-blue-800" type="text" name="name" id="name" required>
+              </div>
+              <div class="mb-4">
+                <label class="block mb-2" for="email">Email</label>
+                <input class="w-full p-3 rounded bg-blue-800" type="email" name="email" id="email" required>
+              </div>
+              <div class="mb-4">
+                <label class="block mb-2" for="message">Message</label>
+                <textarea class="w-full p-3 rounded bg-blue-800" name="message" id="message" required></textarea>
+              </div>
+              <button class="w-full p-3 rounded bg-green-600 text-white hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition-colors duration-200" type="submit">Submit</button>
+            </form>
+            </section>
+        <footer class="bg-blue-200 shadow">
+            <div class="container mx-auto px-6 py-3">
+              <div class="flex justify-between items-center">
+                <div>
+                  <h3 class="text-lg font-bold">Dustin Scott</h3>
+                  <p class="text-sm">Web Developer</p>
+                </div>
+                <div>
+                  <p class="text-sm">Email: your.email@example.com</p>
+                  <p class="text-sm">Phone: (123) 456-7890</p>
+                </div>
+              </div>
+              <div class="text-center mt-3">
+                <p class="text-sm">&copy; 2024 Dustin Scott. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+  </body>
+</html>
